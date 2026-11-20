@@ -1,0 +1,73 @@
+/* Diseño general de la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #4A90E2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Tiempo y mejor puntuación */
+p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Tablero del memorama */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Tarjetas */
+.card {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+/* Tarjetas volteadas */
+.card.flipped {
+    background: #EAF3FF;
+    border: 2px solid #ffffff;
+    transform: scale(1.05);
+}
+
+/* Botón de instalación */
+button {
+    background: white;
+    color: #2465A8;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Efecto del botón */
+button:hover {
+    background: #EAF3FF;
+}
